@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.4.15",
     "@todde.tv/gltf-type-toolkit": "^1.2.0",
     "@types/three": "^0.184.1",
     "typescript": "~6.0.2",
