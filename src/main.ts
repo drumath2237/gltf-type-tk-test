@@ -1,5 +1,3 @@
-import "./style.css";
-
 import * as antiqueCamera from "./assets/AntiqueCamera.glb.js";
 
 async function main() {
