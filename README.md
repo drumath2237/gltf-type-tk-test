@@ -1,0 +1,1 @@
+# gltf-type-tk-test
