@@ -6,7 +6,12 @@ async function main() {
   const { camera, tripod } = antiqueCamera.SceneScene;
   const cameraNode = await antiqueCamera.getNode(camera);
   const tripodNode = await antiqueCamera.getNode(tripod);
-  console.log(cameraNode, tripodNode);
+
+  const app = document.getElementById("app");
+  if (!(app instanceof HTMLDivElement)) {
+    return;
+  }
+  app.textContent = `meshes: [${cameraNode.name}, ${tripodNode.name}]`;
 }
 
 main();
