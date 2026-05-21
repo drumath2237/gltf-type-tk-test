@@ -25,3 +25,5 @@ dist-ssr
 
 *.glb.js
 *.glb.d.ts
+*.gltf.js
+*.gltf.d.ts
