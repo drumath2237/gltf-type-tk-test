@@ -1,10 +1,21 @@
-# gltf-type-tk-test
+# Sample for gltf-type-toolkit
 
 [![Deploy to GitHub Pages](https://github.com/drumath2237/gltf-type-tk-test/actions/workflows/on_push.yml/badge.svg)](https://github.com/drumath2237/gltf-type-tk-test/actions/workflows/on_push.yml)
 
 ## About
 
-A sample code for [gltf-type-toolkit](https://github.com/toddeTV/gltf-type-toolkit/tree/main) (it's an awesome library I think).
+A sample code for [gltf-type-toolkit](https://github.com/toddeTV/gltf-type-toolkit) (it's an awesome library I think).
+
+This library can handle glTF files in a way that works well with TypeScript.
+
+```ts
+import * as antiqueCamera from "./assets/AntiqueCamera.glb.js";
+
+// const hoge = antiqueCamera.SceneScene.hoge; <- type error!
+const { camera, tripod } = antiqueCamera.SceneScene;
+const cameraNode = await antiqueCamera.getNode(camera); // THREE.Mesh
+const tripodNode = await antiqueCamera.getNode(tripod); // THREE.Mesh
+````
 
 ## Environment
 
